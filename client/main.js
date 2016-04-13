@@ -1,12 +1,12 @@
 Template.cubans.helpers({
 	'player': function(){
-		return Players.find({team: '0'}, {sort: {kills: -1}});
+		return Players.find({team: 0}, {sort: {kills: -1}});
 	}
 });
 
 Template.haitians.helpers({
 	'player': function(){
-		return Players.find({team: '1'});
+		return Players.find({team: 1}, {sort: {kills: -1}});
 	}
 });
 
