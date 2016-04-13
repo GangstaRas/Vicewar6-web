@@ -1,0 +1,27 @@
+<template name="navbar">
+    <!-- Fixed navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Vice War VI</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="http://viceunderdogs.com/index.php">Forum</a></li>
+					<li><a href="#contact">Register</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guides <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Event</a></li>
+							<li><a href="#">Rules</a></li>
+							<li><a href="#">Gamemode</a></li>
+						</ul>
+					</li>
+				</ul>
+			  <ul class="nav navbar-nav navbar-right">
+				{{> loginButtons}}
+			  </ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+</template>

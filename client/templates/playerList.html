@@ -1,0 +1,49 @@
+<template name="cubans">
+	<div class="row col-md-5">
+		<table class="table table-hover header-fixed">
+			<thead>
+				<tr>
+					<th class="col-md-2">Name <i class="fa fa-filter"></i> </th>
+					<th class="col-md-1 text-center">Kills <a id="sortCubanKills" href="#"><i class="fa fa-sort"></i></a></th>
+					<th class="col-md-1 text-center">Deaths <a id="sortCubanDeaths" href="#"><i class="fa fa-sort"></i></a></th>
+					<th class="col-md-1 text-center">Captures <a id="sortCubanCaptures" href="#"><i class="fa fa-sort"></i></a></th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each player}}
+				<tr>
+					<td class="col-md-2">{{nickname}}</td>
+					<td class="col-md-1 text-center">{{kills}}</td>
+					<td class="col-md-1 text-center">{{deaths}}</td>
+					<td class="col-md-1 text-center">{{captures}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</template>
+
+<template name="haitians">
+	<div class="row col-md-5 col-md-offset-2">
+		<table class="table header-fixed table-hover">
+			<thead>
+				<tr>
+					<th class="col-md-2">Name <i class="fa fa-filter"></i> </th>
+					<th class="col-md-1 text-center">Kills <a id="sortHaitianKills" href="#"><i class="fa fa-sort"></i></a></th>
+					<th class="col-md-1 text-center">Deaths <a id="sortHaitianDeaths" href="#"><i class="fa fa-sort"></i></a></th>
+					<th class="col-md-1 text-center">Captures <a id="sortHaitianCaptures" href="#"><i class="fa fa-sort"></i></a></th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each player}}
+				<tr>
+					<td class="col-md-2">{{nickname}}</td>
+					<td class="col-md-1 text-center">{{kills}}</td>
+					<td class="col-md-1 text-center">{{deaths}}</td>
+					<td class="col-md-1 text-center">{{captures}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</template>

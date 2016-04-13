@@ -1,0 +1,27 @@
+<template name="matchView">
+	<div class="container" role="main">	
+		<div class="row">
+			{{> teamBanners}}
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="row">
+					{{> teamScores}}
+				</div>
+				
+				<div class="row">
+					{{> playersOnline}}
+				</div>
+				
+				<div class="row">
+					{{> basesControlled}}
+				</div>
+			</div>
+		</div>
+		
+		{{> cubans}}
+		
+		{{> haitians}}
+	</div> <!-- /container -->
+</template>
